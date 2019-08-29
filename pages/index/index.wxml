@@ -1,0 +1,25 @@
+<view class='rec_bottom' wx:if='{{hot_recommended.length>0}}'>
+  <swiper interval="{{interval}}" indicator-dots="{{indicatorDots}}" circular="{{circular}}" bindchange="swiperChange1" class='jrsx_swiper'>
+    <swiper-item wx:for='{{hot_recommended}}' wx:key='list'>
+      <view class='jrsx_item' wx:for='{{item}}' wx:for-item="val" wx:key="id">
+        <view class='goodsdetail'>
+          <view class='jrsx_img'>
+            <image src="{{val.sku_img}}" class='jrsx_picture'></image>
+          </view>
+          <view class='jrsx_title'>{{val.group_title}}</view>
+          <view class='jrsx_price'>
+            ¥
+            <text>{{val.group_price_1}}</text>.{{val.group_price_2}}
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view style='display:{{lunboShow1}}'>
+    <view class="dots1">
+      <block wx:for="{{hot_recommended.length}}" wx:key="unique">
+        <view class="dot{{index == swiperCurrent1 ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+</view>

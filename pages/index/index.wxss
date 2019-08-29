@@ -1,0 +1,76 @@
+.rec_bottom{
+  width: 660rpx;
+  height: 373rpx;
+  float: left;
+  margin:27rpx 0 0 60rpx;
+}
+.jrsx_item{
+  width: 190rpx;
+  height: 310rpx;
+  float: left;
+  margin-right:30rpx;
+}
+.jrsx_img{
+  width: 190rpx;
+  height: 190rpx;
+  overflow: hidden;
+  border-radius: 30rpx;
+  float: left;
+  position: relative;
+}
+.jrsx_picture{
+  width: 190rpx;
+  height: 190rpx;
+}
+.jrsx_title{
+  width: 190rpx;
+	min-height: 62rpx;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30rpx;
+	letter-spacing: 0rpx;
+	color: #000000;
+  float: left;
+  margin:21rpx 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.jrsx_price{
+  float: left;
+  font-size: 20rpx;
+  color: #f03;
+}
+.jrsx_price text {
+  font-size: 30rpx;
+  color: #f03;
+  font-weight: bold;
+}
+.jrsx_swiper{
+  height: 350rpx;
+}
+.dots1 {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.dots1 .dot{
+    margin: 0 8rpx;
+    width: 14rpx;
+    height: 14rpx;
+    background: #000;
+    border-radius: 8rpx;
+    transition: all 0.6s;
+    opacity: 0.5;
+}
+
+.dots1 .dot.active{
+    width: 30rpx;
+    background-image: linear-gradient(-90deg, #ff0c5d 0%, #f7292a 100%), linear-gradient(#fff, #fff);
+    opacity: 1;
+}
